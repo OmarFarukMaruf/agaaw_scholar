@@ -5,4 +5,4 @@ export default function HomePage() {
       <p>This is the main landing page of the application.</p>
     </main>
   );
-}   
+}
