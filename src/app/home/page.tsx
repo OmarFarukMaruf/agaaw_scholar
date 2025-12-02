@@ -1,8 +1,17 @@
+import Hero from "@/components/home/Hero";
+import Features from "@/components/home/Features";
+import CountryPreview from "@/components/home/CountryPreview";
+import ScholarshipPreview from "@/components/home/ScholarshipPreview";
+import Footer from "@/components/home/Footer";
+
 export default function HomePage() {
   return (
-    <main>
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the main landing page of the application.</p>
+    <main className="min-h-screen flex flex-col items-center w-full">
+      <Hero />
+      <Features />
+      <CountryPreview />
+      <ScholarshipPreview />
+      <Footer />
     </main>
   );
 }
