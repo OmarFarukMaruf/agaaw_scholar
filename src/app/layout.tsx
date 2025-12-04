@@ -1,19 +1,20 @@
+import Navbar from "@/components/ui/Navbar";
+import Footer from "@/components/ui/Footer";
 import "./globals.css";
-import { inter } from "./fonts";
 
 export const metadata = {
-  title: "Agaaw",
-  description: "Fly to your Future",
+  title: "Agaaw Scholar",
+  description: "Find scholarships and study opportunities worldwide.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body className="font-sans">{children}</body>
+    <html lang="en">
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

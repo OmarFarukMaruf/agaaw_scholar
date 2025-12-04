@@ -2,7 +2,6 @@ import Hero from "@/components/home/Hero";
 import Features from "@/components/home/Features";
 import CountryPreview from "@/components/home/CountryPreview";
 import ScholarshipPreview from "@/components/home/ScholarshipPreview";
-import Footer from "@/components/home/Footer";
 
 export default function HomePage() {
   return (
@@ -11,7 +10,6 @@ export default function HomePage() {
       <Features />
       <CountryPreview />
       <ScholarshipPreview />
-      <Footer />
     </main>
   );
 }
